@@ -1,0 +1,190 @@
+ :root {
+    --table-head-bg: rgb(25, 220, 231);
+    --table-head-color: rgb(218, 14, 14);
+    --table-head-cell-font-size: 16px;
+    --table-head-cell-font-weight: 600;
+    --table-cell-font-size: 15px;
+    --search-bar-bg: #f7f7f7;
+    --search-bar-border: #ccc;
+    --search-bar-button-bg: #3498db;
+    --search-bar-button-hover: #2980b9;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+.container {
+    padding: 50px 10%;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.table th,
+.table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.table th {
+    background-color: var(--table-head-bg);
+    color: var(--table-head-color);
+    font-weight: var(--table-head-cell-font-weight);
+    font-size: var(--table-head-cell-font-size);
+}
+
+.table td input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: var(--table-cell-font-size);
+    outline: none;
+}
+
+.table tr {
+    transition: background-color 0.3s;
+}
+
+.table tr:hover {
+    background-color: #f2f2f2;
+}
+
+.action-button {
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.delete-selected-button {
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination-button {
+    padding: 5px 10px;
+    margin: 0 2px;
+    border: 1px solid #ccc;
+    background-color: #f5f5f5;
+    color: #333;
+    cursor: pointer;
+}
+
+.pagination-button:hover {
+    background-color: #ddd;
+}
+
+.pagination-button.active {
+    background-color: #11e2d4;
+    color: white;
+}
+
+.search-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.search-input {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    font-size: 14px;
+    outline: none;
+}
+
+.search-button {
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.action-button {
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+  }
+  
+  .action-button.edit-button {
+    background-color: #3498db;
+    color: white;
+  }
+  
+  .action-button.delete-button {
+    background-color: #e74c3c;
+    color: white;
+  }
+  
+  .action-button.edit-button.disabled,
+  .action-button.delete-button.disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .selected-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .delete-selected-button {
+    padding: 8px 15px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .delete-selected-button:hover {
+    background-color: #c0392b;
+  }
+
+  .error-message {
+    color: red;
+    font-size: 16px;
+    margin-top: 5px;
+  }
+
+
+
+
+
+   
+
+
+
+
+   
